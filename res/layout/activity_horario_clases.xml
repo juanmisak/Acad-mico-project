@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo3" >
+
+    <TextView
+        android:id="@+id/tvCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:text="Código:"
+        android:textColor="#E6E6E6" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtParalelo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Consultar"
+        android:textColor="#E6E6E6" />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvCodigo"
+        android:ems="10"
+        android:textColor="#E6E6E6" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvParalelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCodigo"
+        android:layout_below="@+id/txtCodigo"
+        android:layout_marginTop="20dp"
+        android:text="Paralelo:"
+        android:textColor="#E6E6E6" />
+
+    <EditText
+        android:id="@+id/txtParalelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvParalelo"
+        android:layout_alignBottom="@+id/tvParalelo"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvParalelo"
+        android:layout_below="@+id/btnConsultar"
+        android:layout_marginTop="40dp"
+        android:text="Materia:"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="25dp"
+        android:text="Día:"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="22dp"
+        android:text="Hora Inicio:"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="24dp"
+        android:text="Hora Fin:"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="27dp"
+        android:text="Aula:"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="24dp"
+        android:text="Bloque:"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/tvMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/btnConsultar"
+        android:layout_marginLeft="69dp"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/tvDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/tvMateria"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/tvHoraInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/tvDia"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/tvHoraFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/tvHoraInicio"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/tvAula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/tvHoraFin"
+        android:textColor="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/tvBloque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/tvAula"
+        android:textColor="#E6E6E6" />
+
+</RelativeLayout>

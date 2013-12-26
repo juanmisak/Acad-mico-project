@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo3" >
+
+    <Button
+        android:id="@+id/btnMateriasDisponibles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAvance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:radius="9dp"
+        android:background="#0071BC"
+        android:text="@string/btnMateriasDisponibles" />
+
+    <Button
+        android:id="@+id/btnAvance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:radius="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="#0071BC"
+        android:text="@string/btnHistorial" />
+
+    <Button
+        android:id="@+id/btnMateriasRegistradas"
+        android:layout_width="wrap_content"
+        android:background="#0071BC"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMateriasDisponibles"
+        android:layout_below="@+id/btnMateriasDisponibles"
+        android:layout_marginTop="22dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:radius="9dp"
+        android:text="@string/btnMateriasRegistradas"
+        />
+
+    <Button
+        android:id="@+id/btnProbDeAvance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMateriasRegistradas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="#0071BC"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:radius="9dp"
+        android:text="@string/btnProbDeAvance"
+         />
+
+    <ImageButton
+        android:id="@+id/ir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/salir" />
+
+</RelativeLayout>

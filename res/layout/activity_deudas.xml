@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo3" >
+
+    <Button
+        android:id="@+id/btnDeudaGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#0071BC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:text="@string/btnDeudasGeneral" />
+
+    <Button
+        android:id="@+id/btnSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0071BC"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:layout_below="@+id/btnDeudaGen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnSaldoAFavor" />
+
+    <ImageButton
+        android:id="@+id/ir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/salir" />
+    
+    </RelativeLayout>
